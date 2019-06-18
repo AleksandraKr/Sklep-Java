@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Sklep.Produkt" table="Produkt" schema="dbo" catalog="Sklep">
+        <id name="idProdukt">
+            <column name="id_Produkt" sql-type="int"/>
+            <generator class="identity"/>
+        </id>
+        <property name="nazwaProduktu">
+            <column name="Nazwa_Produktu" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="cena">
+            <column name="Cena" sql-type="float" precision="-1" not-null="true"/>
+        </property>
+        <property name="iloscSztuk">
+            <column name="Ilosc_Sztuk" sql-type="int" not-null="true"/>
+        </property>
+        <property name="opisProduktu">
+            <column name="Opis_Produktu" sql-type="varchar(500)" length="500" not-null="false"/>
+        </property>
+        <many-to-one name="typProduktu" column="id_TypP" class="Sklep.TypProduktu" not-null="true"></many-to-one>
+        <set name="koszyk" cascade="all">
+            <key column="id_Produkt"></key>
+            <one-to-many class="Sklep.Koszyk"/>
+        </set>
+        <set name="produktZamowienie" cascade="all">
+            <key column="id_Produkt"></key>
+            <one-to-many class="Sklep.ProduktZamowienie"/>
+        </set>
+        <set name="reklamacje" cascade="all">
+            <key column="id_Produkt"></key>
+            <one-to-many class="Sklep.Reklamacja"/>
+        </set>
+    </class>
+</hibernate-mapping>

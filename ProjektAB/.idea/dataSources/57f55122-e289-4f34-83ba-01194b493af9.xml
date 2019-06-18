@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Sklep@localhost">
+  <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.14">
+    <root id="1">
+      <ServerVersion>14.0.1000</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="Sklep">
+      <ObjectId>7</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+      <Collation>Polish_CI_AS</Collation>
+    </database>
+    <database id="3" parent="1" name="Zoo">
+      <ObjectId>5</ObjectId>
+    </database>
+    <database id="4" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+      <Collation>Polish_CI_AS</Collation>
+    </database>
+    <database id="5" parent="1" name="model">
+      <ObjectId>3</ObjectId>
+      <Collation>Polish_CI_AS</Collation>
+    </database>
+    <database id="6" parent="1" name="msdb">
+      <ObjectId>4</ObjectId>
+      <Collation>Polish_CI_AS</Collation>
+    </database>
+    <database id="7" parent="1" name="tempdb">
+      <ObjectId>2</ObjectId>
+      <Collation>Polish_CI_AS</Collation>
+    </database>
+    <database id="8" parent="1" name="uczelniaxd">
+      <ObjectId>6</ObjectId>
+    </database>
+    <schema id="9" parent="2" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="10" parent="2" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="11" parent="2" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="12" parent="2" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="13" parent="2" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="14" parent="2" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="15" parent="2" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="16" parent="2" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <schema id="17" parent="2" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="18" parent="2" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="19" parent="2" name="dbo">
+      <ObjectId>1</ObjectId>
+      <IntrospectionTimestamp>2019-05-12.20:25:48.903</IntrospectionTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="20" parent="2" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="21" parent="2" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <table id="22" parent="19" name="Adres">
+      <ObjectId>1845581613</ObjectId>
+      <CreatedTimestamp>2019-05-12.20:12:55.390</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.417</ModifiedTimestamp>
+    </table>
+    <table id="23" parent="19" name="Koszyk">
+      <ObjectId>2053582354</ObjectId>
+      <CreatedTimestamp>2019-05-12.20:12:55.420</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.420</ModifiedTimestamp>
+    </table>
+    <table id="24" parent="19" name="Produkt">
+      <ObjectId>2005582183</ObjectId>
+      <CreatedTimestamp>2019-05-12.20:12:55.420</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.433</ModifiedTimestamp>
+    </table>
+    <table id="25" parent="19" name="Produkt_Zamowienie">
+      <ObjectId>66099276</ObjectId>
+      <CreatedTimestamp>2019-05-12.20:12:55.427</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.427</ModifiedTimestamp>
+    </table>
+    <table id="26" parent="19" name="Reklamacja">
+      <ObjectId>162099618</ObjectId>
+      <CreatedTimestamp>2019-05-12.20:12:55.430</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.430</ModifiedTimestamp>
+    </table>
+    <table id="27" parent="19" name="Status_Reklamacji">
+      <ObjectId>130099504</ObjectId>
+      <CreatedTimestamp>2019-05-12.20:12:55.430</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.433</ModifiedTimestamp>
+    </table>
+    <table id="28" parent="19" name="Status_Zamowienia">
+      <ObjectId>2117582582</ObjectId>
+      <CreatedTimestamp>2019-05-12.20:12:55.423</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.427</ModifiedTimestamp>
+    </table>
+    <table id="29" parent="19" name="Typ_Produktu">
+      <ObjectId>1973582069</ObjectId>
+      <CreatedTimestamp>2019-05-12.20:12:55.417</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.420</ModifiedTimestamp>
+    </table>
+    <table id="30" parent="19" name="Typ_Uzytkownika">
+      <ObjectId>1877581727</ObjectId>
+      <CreatedTimestamp>2019-05-12.20:12:55.407</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.417</ModifiedTimestamp>
+    </table>
+    <table id="31" parent="19" name="Uzytkownik">
+      <ObjectId>1909581841</ObjectId>
+      <CreatedTimestamp>2019-05-12.20:12:55.407</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.433</ModifiedTimestamp>
+    </table>
+    <table id="32" parent="19" name="Zamowienie">
+      <ObjectId>2099048</ObjectId>
+      <CreatedTimestamp>2019-05-12.20:12:55.423</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.430</ModifiedTimestamp>
+    </table>
+    <column id="33" parent="22" name="id_Adres">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="22" name="Miasto">
+      <Position>2</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+    </column>
+    <column id="35" parent="22" name="Ulica">
+      <Position>3</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+    </column>
+    <column id="36" parent="22" name="Nr_Mieszkania">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="37" parent="22" name="Kod_Pocztowy">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="38" parent="22" name="PK__Adres__E8984793F7F4160F">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_Adres</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="39" parent="22" name="PK__Adres__E8984793F7F4160F">
+      <ObjectId>1861581670</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.403</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.403</ModifiedTimestamp>
+      <ColNames>id_Adres</ColNames>
+      <UnderlyingIndexName>PK__Adres__E8984793F7F4160F</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="40" parent="23" name="id_Koszyk">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="23" name="id_Produkt">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="42" parent="23" name="Nazwa_uzytkownika">
+      <Position>3</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+    </column>
+    <column id="43" parent="23" name="Ilosc">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="44" parent="23" name="PK__Koszyk__21DBEA25071C3D3E">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_Koszyk</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="45" parent="23" name="PK__Koszyk__21DBEA25071C3D3E">
+      <ObjectId>2069582411</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.420</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.420</ModifiedTimestamp>
+      <ColNames>id_Koszyk</ColNames>
+      <UnderlyingIndexName>PK__Koszyk__21DBEA25071C3D3E</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="46" parent="23" name="FK__Koszyk__id_Produ__7C4F7684">
+      <ObjectId>2085582468</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.420</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.420</ModifiedTimestamp>
+      <ColNames>id_Produkt</ColNames>
+      <RefTableId>2005582183</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Produkt</RefTableName>
+      <RefKeyName>PK__Produkt__A8274357408F570C</RefKeyName>
+      <RefColNames>id_Produkt</RefColNames>
+    </foreign-key>
+    <foreign-key id="47" parent="23" name="FK__Koszyk__Nazwa_uz__7D439ABD">
+      <ObjectId>2101582525</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.423</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.423</ModifiedTimestamp>
+      <ColNames>Nazwa_uzytkownika</ColNames>
+      <RefTableId>1909581841</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Uzytkownik</RefTableName>
+      <RefKeyName>PK__Uzytkown__7FFAE2EB8F38E21B</RefKeyName>
+      <RefColNames>Nazwa_uzytkownika</RefColNames>
+    </foreign-key>
+    <column id="48" parent="24" name="id_Produkt">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="24" name="Nazwa_Produktu">
+      <Position>2</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+    </column>
+    <column id="50" parent="24" name="Cena">
+      <Position>3</Position>
+      <DataType>float|0s</DataType>
+    </column>
+    <column id="51" parent="24" name="Ilosc_Sztuk">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="52" parent="24" name="id_TypP">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="53" parent="24" name="PK__Produkt__A8274357408F570C">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_Produkt</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="54" parent="24" name="PK__Produkt__A8274357408F570C">
+      <ObjectId>2021582240</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.420</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.420</ModifiedTimestamp>
+      <ColNames>id_Produkt</ColNames>
+      <UnderlyingIndexName>PK__Produkt__A8274357408F570C</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="55" parent="24" name="FK__Produkt__id_TypP__797309D9">
+      <ObjectId>2037582297</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.420</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.420</ModifiedTimestamp>
+      <ColNames>id_TypP</ColNames>
+      <RefTableId>1973582069</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Typ_Produktu</RefTableName>
+      <RefKeyName>PK__Typ_Prod__5070D900FCD30D50</RefKeyName>
+      <RefColNames>id_TypP</RefColNames>
+    </foreign-key>
+    <column id="56" parent="25" name="id_PZ">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="57" parent="25" name="id_Produkt">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="58" parent="25" name="id_Zamowienie">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="59" parent="25" name="PK__Produkt___0149BF4E651BFCFC">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_PZ</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="60" parent="25" name="PK__Produkt___0149BF4E651BFCFC">
+      <ObjectId>82099333</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.430</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.430</ModifiedTimestamp>
+      <ColNames>id_PZ</ColNames>
+      <UnderlyingIndexName>PK__Produkt___0149BF4E651BFCFC</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="61" parent="25" name="FK__Produkt_Z__id_Pr__05D8E0BE">
+      <ObjectId>98099390</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.430</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.430</ModifiedTimestamp>
+      <ColNames>id_Produkt</ColNames>
+      <RefTableId>2005582183</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Produkt</RefTableName>
+      <RefKeyName>PK__Produkt__A8274357408F570C</RefKeyName>
+      <RefColNames>id_Produkt</RefColNames>
+    </foreign-key>
+    <foreign-key id="62" parent="25" name="FK__Produkt_Z__id_Za__06CD04F7">
+      <ObjectId>114099447</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.430</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.430</ModifiedTimestamp>
+      <ColNames>id_Zamowienie</ColNames>
+      <RefTableId>2099048</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Zamowienie</RefTableName>
+      <RefKeyName>PK__Zamowien__47864C626EF027C5</RefKeyName>
+      <RefColNames>id_Zamowienie</RefColNames>
+    </foreign-key>
+    <column id="63" parent="26" name="id_Reklamacja">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="64" parent="26" name="id_StatusR">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="65" parent="26" name="id_Produkt">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="66" parent="26" name="Nazwa_uzytkownika">
+      <Position>4</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+    </column>
+    <column id="67" parent="26" name="Opis_Problemu">
+      <Position>5</Position>
+      <DataType>varchar(500 char)|0s</DataType>
+    </column>
+    <index id="68" parent="26" name="PK__Reklamac__C6095663448CCA12">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_Reklamacja</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="69" parent="26" name="PK__Reklamac__C6095663448CCA12">
+      <ObjectId>178099675</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.433</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.433</ModifiedTimestamp>
+      <ColNames>id_Reklamacja</ColNames>
+      <UnderlyingIndexName>PK__Reklamac__C6095663448CCA12</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="70" parent="26" name="FK__Reklamacj__id_St__0B91BA14">
+      <ObjectId>194099732</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.433</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.433</ModifiedTimestamp>
+      <ColNames>id_StatusR</ColNames>
+      <RefTableId>130099504</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Status_Reklamacji</RefTableName>
+      <RefKeyName>PK__Status_R__CC9DBBB847CC1E94</RefKeyName>
+      <RefColNames>id_StatusR</RefColNames>
+    </foreign-key>
+    <foreign-key id="71" parent="26" name="FK__Reklamacj__id_Pr__0C85DE4D">
+      <ObjectId>210099789</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.433</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.433</ModifiedTimestamp>
+      <ColNames>id_Produkt</ColNames>
+      <RefTableId>2005582183</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Produkt</RefTableName>
+      <RefKeyName>PK__Produkt__A8274357408F570C</RefKeyName>
+      <RefColNames>id_Produkt</RefColNames>
+    </foreign-key>
+    <foreign-key id="72" parent="26" name="FK__Reklamacj__Nazwa__0D7A0286">
+      <ObjectId>226099846</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.433</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.433</ModifiedTimestamp>
+      <ColNames>Nazwa_uzytkownika</ColNames>
+      <RefTableId>1909581841</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Uzytkownik</RefTableName>
+      <RefKeyName>PK__Uzytkown__7FFAE2EB8F38E21B</RefKeyName>
+      <RefColNames>Nazwa_uzytkownika</RefColNames>
+    </foreign-key>
+    <column id="73" parent="27" name="id_StatusR">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="74" parent="27" name="Nazwa_StatusR">
+      <Position>2</Position>
+      <DataType>varchar(20 char)|0s</DataType>
+    </column>
+    <index id="75" parent="27" name="PK__Status_R__CC9DBBB847CC1E94">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_StatusR</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="76" parent="27" name="PK__Status_R__CC9DBBB847CC1E94">
+      <ObjectId>146099561</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.430</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.430</ModifiedTimestamp>
+      <ColNames>id_StatusR</ColNames>
+      <UnderlyingIndexName>PK__Status_R__CC9DBBB847CC1E94</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="77" parent="28" name="id_StatusZ">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="78" parent="28" name="Nazwa_StatusZ">
+      <Position>2</Position>
+      <DataType>varchar(20 char)|0s</DataType>
+    </column>
+    <index id="79" parent="28" name="PK__Status_Z__CC9DBBA0B50098C4">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_StatusZ</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="80" parent="28" name="PK__Status_Z__CC9DBBA0B50098C4">
+      <ObjectId>2133582639</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.423</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.423</ModifiedTimestamp>
+      <ColNames>id_StatusZ</ColNames>
+      <UnderlyingIndexName>PK__Status_Z__CC9DBBA0B50098C4</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="81" parent="29" name="id_TypP">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="82" parent="29" name="Nazwa_TypP">
+      <Position>2</Position>
+      <DataType>varchar(20 char)|0s</DataType>
+    </column>
+    <index id="83" parent="29" name="PK__Typ_Prod__5070D900FCD30D50">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_TypP</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="84" parent="29" name="PK__Typ_Prod__5070D900FCD30D50">
+      <ObjectId>1989582126</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.420</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.420</ModifiedTimestamp>
+      <ColNames>id_TypP</ColNames>
+      <UnderlyingIndexName>PK__Typ_Prod__5070D900FCD30D50</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="85" parent="30" name="id_TypU">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="86" parent="30" name="Nazwa_TypU">
+      <Position>2</Position>
+      <DataType>varchar(20 char)|0s</DataType>
+    </column>
+    <index id="87" parent="30" name="PK__Typ_Uzyt__5070D905DAE23F29">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_TypU</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="88" parent="30" name="PK__Typ_Uzyt__5070D905DAE23F29">
+      <ObjectId>1893581784</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.407</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.407</ModifiedTimestamp>
+      <ColNames>id_TypU</ColNames>
+      <UnderlyingIndexName>PK__Typ_Uzyt__5070D905DAE23F29</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="89" parent="31" name="Nazwa_uzytkownika">
+      <Position>1</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="90" parent="31" name="Haslo">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+    </column>
+    <column id="91" parent="31" name="Imie">
+      <Position>3</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+    </column>
+    <column id="92" parent="31" name="Nazwisko">
+      <Position>4</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+    </column>
+    <column id="93" parent="31" name="id_Adres">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="94" parent="31" name="id_TypU">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="95" parent="31" name="PK__Uzytkown__7FFAE2EB8F38E21B">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Nazwa_uzytkownika</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="96" parent="31" name="PK__Uzytkown__7FFAE2EB8F38E21B">
+      <ObjectId>1925581898</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.417</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.417</ModifiedTimestamp>
+      <ColNames>Nazwa_uzytkownika</ColNames>
+      <UnderlyingIndexName>PK__Uzytkown__7FFAE2EB8F38E21B</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="97" parent="31" name="FK__Uzytkowni__id_Ad__73BA3083">
+      <ObjectId>1941581955</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.417</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.417</ModifiedTimestamp>
+      <ColNames>id_Adres</ColNames>
+      <RefTableId>1845581613</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Adres</RefTableName>
+      <RefKeyName>PK__Adres__E8984793F7F4160F</RefKeyName>
+      <RefColNames>id_Adres</RefColNames>
+    </foreign-key>
+    <foreign-key id="98" parent="31" name="FK__Uzytkowni__id_Ty__74AE54BC">
+      <ObjectId>1957582012</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.417</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.417</ModifiedTimestamp>
+      <ColNames>id_TypU</ColNames>
+      <RefTableId>1877581727</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Typ_Uzytkownika</RefTableName>
+      <RefKeyName>PK__Typ_Uzyt__5070D905DAE23F29</RefKeyName>
+      <RefColNames>id_TypU</RefColNames>
+    </foreign-key>
+    <column id="99" parent="32" name="id_Zamowienie">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="100" parent="32" name="Nazwa_uzytkownika">
+      <Position>2</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+    </column>
+    <column id="101" parent="32" name="id_StatusZ">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="102" parent="32" name="PK__Zamowien__47864C626EF027C5">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_Zamowienie</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="103" parent="32" name="PK__Zamowien__47864C626EF027C5">
+      <ObjectId>18099105</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.427</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.427</ModifiedTimestamp>
+      <ColNames>id_Zamowienie</ColNames>
+      <UnderlyingIndexName>PK__Zamowien__47864C626EF027C5</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="104" parent="32" name="FK__Zamowieni__Nazwa__02084FDA">
+      <ObjectId>34099162</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.427</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.427</ModifiedTimestamp>
+      <ColNames>Nazwa_uzytkownika</ColNames>
+      <RefTableId>1909581841</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Uzytkownik</RefTableName>
+      <RefKeyName>PK__Uzytkown__7FFAE2EB8F38E21B</RefKeyName>
+      <RefColNames>Nazwa_uzytkownika</RefColNames>
+    </foreign-key>
+    <foreign-key id="105" parent="32" name="FK__Zamowieni__id_St__02FC7413">
+      <ObjectId>50099219</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-05-12.20:12:55.427</CreatedTimestamp>
+      <ModifiedTimestamp>2019-05-12.20:12:55.427</ModifiedTimestamp>
+      <ColNames>id_StatusZ</ColNames>
+      <RefTableId>2117582582</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Status_Zamowienia</RefTableName>
+      <RefKeyName>PK__Status_Z__CC9DBBA0B50098C4</RefKeyName>
+      <RefColNames>id_StatusZ</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>

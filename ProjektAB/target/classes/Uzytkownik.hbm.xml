@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Sklep.Uzytkownik" table="Uzytkownik" schema="dbo" catalog="Sklep">
+        <id name="nazwaUzytkownika">
+            <column name="Nazwa_uzytkownika" sql-type="varchar(30)" length="30"/>
+        </id>
+        <property name="haslo">
+            <column name="Haslo" sql-type="varchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="imie">
+            <column name="Imie" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="nazwisko">
+            <column name="Nazwisko" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+        <many-to-one name="typUzytkownika" column="id_TypU" class="Sklep.TypUzytkownika" not-null="true"></many-to-one>
+        <set name="zamowienia" cascade="all">
+            <key column="Nazwa_uzytkownika"></key>
+            <one-to-many class="Sklep.Zamowienie"/>
+        </set>
+        <set name="koszyk" cascade="all">
+            <key column="Nazwa_uzytkownika"></key>
+            <one-to-many class="Sklep.Koszyk"/>
+        </set>
+        <set name="reklamacje" cascade="all">
+            <key column="Nazwa_uzytkownika"></key>
+            <one-to-many class="Sklep.Reklamacja"/>
+        </set>
+        <set name="adres" cascade="all">
+            <key column="Nazwa_uzytkownika"></key>
+            <one-to-many class="Sklep.Adres"/>
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sklep.Admin">
+    <tabs>
+        <Tab text="Sklep">
+            <content>
+                <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="349.0">
+                    <children>
+                        <ScrollPane fx:id="scroolsklep" layoutX="202.0" layoutY="130.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="699.0" style="-fx-background-color: gray;" />
+                        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="900.0" style="-fx-background-color: #9ACD32;">
+                            <children>
+                                <FontAwesomeIconView glyphName="HOME" layoutX="385.0" layoutY="109.0" size="130" />
+                            </children>
+                        </AnchorPane>
+                        <VBox layoutY="130.0" prefHeight="631.0" prefWidth="202.0" style="-fx-background-color: #9ACD32;">
+                            <children>
+                                <Button fx:id="zsls" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="202.0" text="Szampony z SLS" />
+                                <Button fx:id="bsls" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="31.0" prefWidth="202.0" text="Szampony bez SLS" />
+                                <Button fx:id="proteinowe" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="202.0" text="Odżywki proteinowe" />
+                                <Button fx:id="emolientowe" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="202.0" text="Odżywki emolientowe" />
+                                <Button fx:id="humektantowe" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="202.0" text="Odżywki humektantowe" />
+                                <Button fx:id="kremy" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="202.0" text="Kremy do stylizacji" />
+                                <Button fx:id="zele" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="202.0" text="Żele" />
+                                <Button fx:id="pianki" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="202.0" text="Pianki" />
+                                <Button fx:id="wysokopor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="202.0" text="Oleje do wysokoporów" />
+                                <Button fx:id="sredniopor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="202.0" text="Oleje do średnioporów" />
+                                <Button fx:id="niskopor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="202.0" text="Oleje do niskoporów" />
+                                <Button fx:id="ziolab" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="202.0" text="Zioła bezbarwne" />
+                                <Button fx:id="ziolaf" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="202.0" text="Zioła farbujące" />
+                        <Button fx:id="wszystko" layoutX="10.0" layoutY="382.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="202.0" text="Wszystko" />
+                        <Button fx:id="dodajprod" layoutX="10.0" layoutY="413.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="202.0" text="Dodaj produkt" />
+                        <Button fx:id="modprod" layoutX="10.0" layoutY="444.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="202.0" text="Modyfikuj produkty" />
+                            </children>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Zamówienia i reklamacje">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <VBox layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="202.0" style="-fx-background-color: #48D1CC;">
+                            <children>
+                                <Button fx:id="spiszamowien" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="31.0" prefWidth="202.0" text="Zamówienia" />
+                                <Button fx:id="spisreklamacji" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="31.0" prefWidth="202.0" text="Reklamacje" />
+                            </children>
+                        </VBox>
+                        <ScrollPane fx:id="scroolzir" layoutX="202.0" layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0" prefWidth="698.0" />
+                        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="900.0" style="-fx-background-color: #48D1CC;">
+                            <children>
+                                <MaterialDesignIconView glyphName="CART" layoutX="385.0" layoutY="113.0" size="130" />
+                            </children>
+                        </AnchorPane>
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Zarządzaj kontami">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="900.0">
+                    <children>
+                        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="900.0" style="-fx-background-color: #87CEFA;">
+                            <children>
+                                <MaterialDesignIconView glyphName="ACCOUNT_CIRCLE" layoutX="385.0" layoutY="113.0" size="130" />
+                            </children>
+                        </AnchorPane>
+                        <VBox layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="202.0" style="-fx-background-color: #87CEFA;">
+                     <children>
+                        <Button fx:id="dodajpracownika" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="31.0" prefWidth="202.0" text="Dodaj konto pracownika" />
+                        <Button fx:id="kontapracownikow" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="31.0" prefWidth="202.0" text="Konta pracowników" />
+                     </children></VBox>
+                  <ScrollPane fx:id="scroolkont" layoutX="202.0" layoutY="131.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0" prefWidth="699.0">
+                     <content>
+                        <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="686.0" text="Witaj Adminie!">
+                           <font>
+                              <Font name="System Bold" size="96.0" />
+                           </font>
+                        </Label>
+                     </content>
+                  </ScrollPane>
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

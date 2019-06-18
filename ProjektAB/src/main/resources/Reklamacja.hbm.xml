@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Sklep.Reklamacja" table="Reklamacja" schema="dbo" catalog="Sklep">
+        <id name="idReklamacja">
+            <column name="id_Reklamacja" sql-type="int"/>
+            <generator class="identity"/>
+        </id>
+        <property name="opisProblemu">
+            <column name="Opis_Problemu" sql-type="varchar(500)" length="500" not-null="true"/>
+        </property>
+        <many-to-one name="uzytkownik" column="Nazwa_uzytkownika" class="Sklep.Uzytkownik" not-null="true"></many-to-one>
+        <many-to-one name="statusReklamacji" column="id_StatusR" class="Sklep.StatusReklamacji" not-null="true"></many-to-one>
+        <many-to-one name="produkt" column="id_Produkt" class="Sklep.Produkt" not-null="true"></many-to-one>
+        <property name="dataR">
+            <column name="Data_R" sql-type="date" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

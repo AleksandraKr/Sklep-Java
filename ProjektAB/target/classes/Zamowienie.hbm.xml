@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Sklep.Zamowienie" table="Zamowienie" schema="dbo" catalog="Sklep">
+        <id name="idZamowienie">
+            <column name="id_Zamowienie" sql-type="int"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one name="uzytkownik" column="Nazwa_uzytkownika" class="Sklep.Uzytkownik" not-null="true"></many-to-one>
+        <many-to-one name="statusZamowienia" column="id_StatusZ" class="Sklep.StatusZamowienia" not-null="true"></many-to-one>
+        <many-to-one name="adres" column="id_Adres" class="Sklep.Adres" not-null="true"></many-to-one>
+        <property name="koszt">
+            <column name="Koszt" sql-type="float" not-null="true"/>
+        </property>
+        <property name="dataZ">
+            <column name="Data_Z" sql-type="date" not-null="true"/>
+        </property>
+        <set name="produktZamowienie" cascade="all">
+            <key column="id_Zamowienie"></key>
+            <one-to-many class="Sklep.ProduktZamowienie"/>
+        </set>
+    </class>
+</hibernate-mapping>

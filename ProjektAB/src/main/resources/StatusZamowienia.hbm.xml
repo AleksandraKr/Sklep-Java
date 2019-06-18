@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Sklep.StatusZamowienia" table="Status_Zamowienia" schema="dbo" catalog="Sklep">
+        <id name="idStatusZ">
+            <column name="id_StatusZ" sql-type="int"/>
+        </id>
+        <property name="nazwaStatusZ">
+            <column name="Nazwa_StatusZ" sql-type="varchar(20)" length="20" not-null="true"/>
+        </property>
+        <set name="zamowienia" cascade="all">
+            <key column="id_StatusZ"></key>
+            <one-to-many class="Sklep.Zamowienie"/>
+        </set>
+    </class>
+</hibernate-mapping>
